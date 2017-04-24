@@ -46,9 +46,11 @@
 }
 
 - (void)handleNavigationBar {
+    
     self.barImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, 64)];
     _barImageView.backgroundColor = [UIColor orangeColor];
     [self.navigationController.navigationBar addSubview:_barImageView];
+    
     UIButton *button = [[UIButton alloc]init];
     [button setTitle:@"我最帅" forState:UIControlStateNormal];
     button.frame = CGRectMake(0, 0, 30, 30);
